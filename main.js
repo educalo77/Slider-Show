@@ -27,12 +27,12 @@ scaleIn(patience);
 
 carouselContainer.style.visibility = 'hidden';
 
-setTimeout(function(){
-fade(monkStart);
-fade(patience);
-fadeIn(innerSteps)
-fadeIn(carouselContainer);
-fadeIn(vow);
+setTimeout(function () {
+	fade(monkStart);
+	fade(patience);
+	fadeIn(innerSteps)
+	fadeIn(carouselContainer);
+	fadeIn(vow);
 }, 2500)
 
 const size = carouselImages[0].clientWidth;
@@ -58,7 +58,7 @@ var x3 = 153;
 var x4 = 215;
 var x5 = 278;
 var x6 = 339;
-var x7 = 429.5;
+var x7 = 420;
 var x8 = 500;
 
 skill.style.visibility = 'hidden';
@@ -72,19 +72,20 @@ results.style.visibility = 'hidden';
 monk.style.visibility = 'visible';
 innerSteps.style.visibility = 'hidden';
 
-carouselSlide.style.transform = 'translateX(' (0) + 'px)';
+carouselSlide.style.transform = 'translateX('(0) + 'px)';
 
 nextBtn.addEventListener('click', forward());
 prevBtn.addEventListener('click', backward());
 
 function rmvBtn() {
-	if (counter === 0){
-	prevBtn.style.visibility = 'hidden';
-}
+	if (counter === 0) {
+		prevBtn.style.visibility = 'hidden';
+	}
 }
 rmvBtn()
 
 slide1.addEventListener('click', first());
+
 function first() {
 	carouselSlide.style.transition = "transform 1s ease-in-out";
 	carouselSlide.style.transform = 'translateX(' + (0) + '%)';
@@ -105,6 +106,7 @@ function first() {
 	ninesteps(counter);
 }
 slide2.addEventListener('click', second());
+
 function second() {
 	carouselSlide.style.transition = "transform 1s ease-in-out";
 	carouselSlide.style.transform = 'translateX(' + (-x1) + '%)';
@@ -127,6 +129,7 @@ function second() {
 
 }
 slide3.addEventListener('click', third());
+
 function third() {
 	carouselSlide.style.transition = "transform 1s ease-in-out";
 	carouselSlide.style.transform = 'translateX(' + (-x2) + '%)';
@@ -148,6 +151,7 @@ function third() {
 
 }
 slide4.addEventListener('click', forth());
+
 function forth() {
 	carouselSlide.style.transition = "transform 1s ease-in-out";
 	carouselSlide.style.transform = 'translateX(' + (-x3) + '%)';
@@ -157,7 +161,7 @@ function forth() {
 	prevBtn.style.visibility = 'visible';
 	vow.style.visibility = 'hidden';
 	temple.style.visibility = 'hidden';
-	skill.style.visibility ='hidden';
+	skill.style.visibility = 'hidden';
 	fade(conviction);
 	fadeIn(work);
 	master.style.visibility = 'hidden';
@@ -169,6 +173,7 @@ function forth() {
 
 }
 slide5.addEventListener('click', fifth());
+
 function fifth() {
 	carouselSlide.style.transition = "transform 1s ease-in-out";
 	carouselSlide.style.transform = 'translateX(' + (-x4) + '%)';
@@ -178,8 +183,8 @@ function fifth() {
 	prevBtn.style.visibility = 'visible';
 	vow.style.visibility = 'hidden';
 	temple.style.visibility = 'hidden';
-	skill.style.visibility ='hidden';
-	conviction.style.visibility ='hidden';
+	skill.style.visibility = 'hidden';
+	conviction.style.visibility = 'hidden';
 	fade(work);
 	fadeIn(master);
 	wisdom.style.visibility = 'hidden';
@@ -189,6 +194,7 @@ function fifth() {
 	ninesteps(counter);
 }
 slide6.addEventListener('click', sixth());
+
 function sixth() {
 	carouselSlide.style.transition = "transform 1s ease-in-out";
 	carouselSlide.style.transform = 'translateX(' + (-x5) + '%)';
@@ -198,8 +204,8 @@ function sixth() {
 	prevBtn.style.visibility = 'visible';
 	vow.style.visibility = 'hidden';
 	temple.style.visibility = 'hidden';
-	skill.style.visibility ='hidden';
-	conviction.style.visibility ='hidden';
+	skill.style.visibility = 'hidden';
+	conviction.style.visibility = 'hidden';
 	work.style.visibility = 'hidden';
 	fade(master);
 	fadeIn(wisdom);
@@ -210,6 +216,7 @@ function sixth() {
 
 }
 slide7.addEventListener('click', seventh());
+
 function seventh() {
 	carouselSlide.style.transition = "transform 1s ease-in-out";
 	carouselSlide.style.transform = 'translateX(' + (-x6) + '%)';
@@ -219,8 +226,8 @@ function seventh() {
 	prevBtn.style.visibility = 'visible';
 	vow.style.visibility = 'hidden';
 	temple.style.visibility = 'hidden';
-	skill.style.visibility ='hidden';
-	conviction.style.visibility ='hidden';
+	skill.style.visibility = 'hidden';
+	conviction.style.visibility = 'hidden';
 	work.style.visibility = 'hidden';
 	master.style.visibility = 'hidden';
 	fade(wisdom);
@@ -230,7 +237,8 @@ function seventh() {
 	ninesteps(counter);
 }
 slide8.addEventListener('click', eigth());
-function eigth() {
+
+function eighth() {
 	carouselSlide.style.transition = "transform 1s ease-in-out";
 	carouselSlide.style.transform = 'translateX(' + (-x7) + '%)';
 	counter = 7
@@ -239,20 +247,21 @@ function eigth() {
 	prevBtn.style.visibility = 'visible';
 	vow.style.visibility = 'hidden';
 	temple.style.visibility = 'hidden';
-	skill.style.visibility ='hidden';
-	conviction.style.visibility ='hidden';
+	skill.style.visibility = 'hidden';
+	conviction.style.visibility = 'hidden';
 	work.style.visibility = 'hidden';
 	master.style.visibility = 'hidden';
 	wisdom.style.visibility = 'hidden';
 	fade(perfection);
 	fadeIn(pride);
-	setTimeout(function(){ 
-	fade(pride);
-	fadeIn(results)
-	 }, 3000);
-	 ninesteps(counter);
+	setTimeout(function () {
+		fade(pride);
+		fadeIn(results)
+	}, 3000);
+	ninesteps(counter);
 }
 slide9.addEventListener('click', nineth());
+
 function nineth() {
 	carouselSlide.style.transition = "transform 1s ease-in-out";
 	carouselSlide.style.transform = 'translateX(' + (-x8) + '%)';
@@ -262,8 +271,8 @@ function nineth() {
 	prevBtn.style.visibility = 'visible';
 	vow.style.visibility = 'hidden';
 	temple.style.visibility = 'hidden';
-	skill.style.visibility ='hidden';
-	conviction.style.visibility ='hidden';
+	skill.style.visibility = 'hidden';
+	conviction.style.visibility = 'hidden';
 	work.style.visibility = 'hidden';
 	master.style.visibility = 'hidden';
 	wisdom.style.visibility = 'hidden';
@@ -276,7 +285,7 @@ function nineth() {
 function forward() {
 	counter++;
 	carouselSlide.style.transition = "transform 1s ease-in-out"
-	if(counter === 1){
+	if (counter === 1) {
 		carouselSlide.style.transform = 'translateX(' + (-x1) + '%)';
 		colorBtn(counter);
 		prevBtn.style.visibility = 'visible';
@@ -293,7 +302,7 @@ function forward() {
 		ninesteps(counter);
 
 	}
-	if(counter === 2){
+	if (counter === 2) {
 		carouselSlide.style.transform = 'translateX(' + (-x2) + '%)';
 		colorBtn(counter);
 		vow.style.visibility = 'hidden';
@@ -309,14 +318,14 @@ function forward() {
 		ninesteps(counter);
 
 	}
-	if(counter === 3){
+	if (counter === 3) {
 		carouselSlide.style.transform = 'translateX(' + (-x3) + '%)';
 		colorBtn(counter);
 		vow.style.visibility = 'hidden';
 		temple.style.visibility = 'hidden';
-		skill.style.visibility ='hidden';
+		skill.style.visibility = 'hidden';
 		fade(conviction),
-		fadeIn(work);
+			fadeIn(work);
 		master.style.visibility = 'hidden';
 		wisdom.style.visibility = 'hidden';
 		perfection.style.visibility = 'hidden';
@@ -325,12 +334,12 @@ function forward() {
 		ninesteps(counter);
 
 	}
-	if(counter === 4){
+	if (counter === 4) {
 		carouselSlide.style.transform = 'translateX(' + (-x4) + '%)';
 		colorBtn(counter);
 		vow.style.visibility = 'hidden';
 		temple.style.visibility = 'hidden';
-		skill.style.visibility ='hidden';
+		skill.style.visibility = 'hidden';
 		conviction.style.visibility = 'hidden';
 		fade(work);
 		fadeIn(master);
@@ -341,11 +350,11 @@ function forward() {
 		ninesteps(counter);
 
 	}
-	if(counter === 5){
+	if (counter === 5) {
 		carouselSlide.style.transform = 'translateX(' + (-x5) + '%)';
 		colorBtn(counter);
 		vow.style.visibility = 'hidden';
-		skill.style.visibility ='hidden';
+		skill.style.visibility = 'hidden';
 		temple.style.visibility = 'hidden';
 		conviction.style.visibility = 'hidden';
 		work.style.visibility = 'hidden';
@@ -356,12 +365,12 @@ function forward() {
 		results.style.visibility = 'hidden';
 		ninesteps(counter);
 	}
-	if(counter === 6){
+	if (counter === 6) {
 		carouselSlide.style.transform = 'translateX(' + (-x6) + '%)';
 		colorBtn(counter);
 		vow.style.visibility = 'hidden';
 		temple.style.visibility = 'hidden';
-		skill.style.visibility ='hidden';
+		skill.style.visibility = 'hidden';
 		conviction.style.visibility = 'hidden';
 		work.style.visibility = 'hidden';
 		master.style.visibility = 'hidden';
@@ -371,32 +380,32 @@ function forward() {
 		results.style.visibility = 'hidden';
 		ninesteps(counter);
 	}
-	if(counter === 7){
+	if (counter === 7) {
 		carouselSlide.style.transform = 'translateX(' + (-x7) + '%)';
 		colorBtn(counter);
 		nextBtn.style.visibility = 'visible';
 		vow.style.visibility = 'hidden';
 		temple.style.visibility = 'hidden';
-		skill.style.visibility ='hidden';
+		skill.style.visibility = 'hidden';
 		conviction.style.visibility = 'hidden';
 		work.style.visibility = 'hidden';
 		master.style.visibility = 'hidden';
 		wisdom.style.visibility = 'hidden';
 		fade(perfection);
 		fadeIn(pride)
-		setTimeout(function(){ 
+		setTimeout(function () {
 			fade(pride);
 			results.style.visibility = 'visible';
-			 }, 1000);
+		}, 1000);
 		ninesteps(counter);
 	}
-	if(counter === 8){
+	if (counter === 8) {
 		carouselSlide.style.transform = 'translateX(' + (-x8) + '%)';
 		colorBtn(counter);
 		nextBtn.style.visibility = 'hidden';
 		vow.style.visibility = 'hidden';
 		temple.style.visibility = 'hidden';
-		skill.style.visibility ='hidden';
+		skill.style.visibility = 'hidden';
 		conviction.style.visibility = 'hidden';
 		work.style.visibility = 'hidden';
 		master.style.visibility = 'hidden';
@@ -412,13 +421,13 @@ function forward() {
 function backward() {
 	carouselSlide.style.transition = "transform 1s ease-in-out"
 	counter--;
-	if(counter === 0){
+	if (counter === 0) {
 		carouselSlide.style.transform = 'translateX(' + (0) + 'px)';
 		colorBtn(counter);
 		rmvBtn()
 		fadeIn(vow);
 		temple.style.visibility = 'visible';
-		skill.style.visibility ='hidden';
+		skill.style.visibility = 'hidden';
 		conviction.style.visibility = 'hidden';
 		work.style.visibility = 'hidden';
 		master.style.visibility = 'hidden';
@@ -429,7 +438,7 @@ function backward() {
 		ninesteps(counter);
 
 	}
-	if(counter === 1){
+	if (counter === 1) {
 		carouselSlide.style.transform = 'translateX(' + (-x1) + '%)';
 		colorBtn(counter);
 		vow.style.visibility = 'hidden';
@@ -445,12 +454,12 @@ function backward() {
 		ninesteps(counter);
 
 	}
-	if(counter === 2){
+	if (counter === 2) {
 		carouselSlide.style.transform = 'translateX(' + (-x2) + '%)';
 		colorBtn(counter);
 		vow.style.visibility = 'hidden';
 		temple.style.visibility = 'hidden';
-		skill.style.visibility ='hidden';
+		skill.style.visibility = 'hidden';
 		fadeIn(conviction);
 		work.style.visibility = 'hidden';
 		master.style.visibility = 'hidden';
@@ -460,12 +469,12 @@ function backward() {
 		results.style.visibility = 'hidden';
 		ninesteps(counter);
 	}
-	if(counter === 3){
+	if (counter === 3) {
 		carouselSlide.style.transform = 'translateX(' + (-x3) + '%)';
 		colorBtn(counter);
 		vow.style.visibility = 'hidden';
 		temple.style.visibility = 'hidden';
-		skill.style.visibility ='hidden';
+		skill.style.visibility = 'hidden';
 		conviction.style.visibility = 'hidden';
 		fadeIn(work);
 		master.style.visibility = 'hidden';
@@ -475,12 +484,12 @@ function backward() {
 		results.style.visibility = 'hidden';
 		ninesteps(counter);
 	}
-	if(counter === 4){
+	if (counter === 4) {
 		carouselSlide.style.transform = 'translateX(' + (-x4) + '%)';
 		colorBtn(counter);
 		vow.style.visibility = 'hidden';
 		temple.style.visibility = 'hidden';
-		skill.style.visibility ='hidden';
+		skill.style.visibility = 'hidden';
 		conviction.style.visibility = 'hidden';
 		work.style.visibility = 'hidden';
 		fadeIn(master);
@@ -490,12 +499,12 @@ function backward() {
 		results.style.visibility = 'hidden';
 		ninesteps(counter);
 	}
-	if(counter === 5){
+	if (counter === 5) {
 		carouselSlide.style.transform = 'translateX(' + (-x5) + '%)';
 		colorBtn(counter);
 		vow.style.visibility = 'hidden';
 		temple.style.visibility = 'hidden';
-		skill.style.visibility ='hidden';
+		skill.style.visibility = 'hidden';
 		conviction.style.visibility = 'hidden';
 		work.style.visibility = 'hidden';
 		master.style.visibility = 'hidden';
@@ -505,54 +514,54 @@ function backward() {
 		results.style.visibility = 'hidden';
 		ninesteps(counter);
 	}
-	if(counter === 6){
+	if (counter === 6) {
 		carouselSlide.style.transform = 'translateX(' + (-x6) + '%)';
 		colorBtn(counter);
 		vow.style.visibility = 'hidden';
 		temple.style.visibility = 'hidden';
-		skill.style.visibility ='hidden';
+		skill.style.visibility = 'hidden';
 		conviction.style.visibility = 'hidden';
 		work.style.visibility = 'hidden';
 		master.style.visibility = 'hidden';
 		wisdom.style.visibility = 'hidden';
 		fadeIn(perfection);
 		fade(pride);
-        fade(results);
+		fade(results);
 		ninesteps(counter);
 	}
-	if(counter === 7){
+	if (counter === 7) {
 		carouselSlide.style.transform = 'translateX(' + (-x7) + '%)';
 		colorBtn(counter);
 		nextBtn.style.visibility = 'visible';
 		vow.style.visibility = 'hidden';
 		temple.style.visibility = 'hidden';
-		skill.style.visibility ='hidden';
+		skill.style.visibility = 'hidden';
 		conviction.style.visibility = 'hidden';
 		work.style.visibility = 'hidden';
 		master.style.visibility = 'hidden';
 		wisdom.style.visibility = 'hidden';
 		perfection.style.visibility = 'hidden';
 		fadeIn(pride);
-		setTimeout(function(){ 
+		setTimeout(function () {
 			fade(pride)
 			fadeIn(results)
-			 }, 1000);
+		}, 1000);
 		ninesteps(counter);
-    }
-    if(counter === 8){
+	}
+	if (counter === 8) {
 		carouselSlide.style.transform = 'translateX(' + (-x8) + '%)';
 		colorBtn(counter);
 		nextBtn.style.visibility = 'visible';
 		vow.style.visibility = 'hidden';
 		temple.style.visibility = 'hidden';
-		skill.style.visibility ='hidden';
+		skill.style.visibility = 'hidden';
 		conviction.style.visibility = 'hidden';
 		work.style.visibility = 'hidden';
 		master.style.visibility = 'hidden';
 		wisdom.style.visibility = 'hidden';
 		perfection.style.visibility = 'hidden';
 		pride.style.visibility = 'hidden';
-        results.style.visibility = 'hidden';
+		results.style.visibility = 'hidden';
 		ninesteps(counter);
 	}
 }
@@ -563,46 +572,48 @@ function colorBtn(counter) {
 }
 
 function fade(element) {
-    var op = 1;  // initial opacity
-    var timer = setInterval(function () {
-        if (op <= 0.1){
-            clearInterval(timer);
-            element.style.visibility = 'hidden';
-        }
-        element.style.opacity = op;
-        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op -= op * 0.1;
-    }, 30);
+	var op = 1; // initial opacity
+	var timer = setInterval(function () {
+		if (op <= 0.1) {
+			clearInterval(timer);
+			element.style.visibility = 'hidden';
+		}
+		element.style.opacity = op;
+		element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+		op -= op * 0.1;
+	}, 30);
 }
+
 function fadeIn(element) {
-    var op = 0.1;  // initial opacity
-    var timer = setInterval(function () {
+	var op = 0.1; // initial opacity
+	var timer = setInterval(function () {
 		element.style.visibility = 'visible';
 
-        if (op >= 1){
-            clearInterval(timer);
-        }
-        element.style.opacity = op;
-        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op += op * 0.1;
-    }, 30);
-}
-function scaleIn(element) {
-    var sc = 0.1;  
-    var timer = setInterval(function () {
-        element.style.visibility = 'visible';
-		element.style.transform = 'scale(0.1,0.1)';
-        if (sc >= 1){
-            clearInterval(timer);
-        }
-        element.style.transform = 'scale(' + sc + ')';
-        sc += sc * 0.1;
-    }, 60);
+		if (op >= 1) {
+			clearInterval(timer);
+		}
+		element.style.opacity = op;
+		element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+		op += op * 0.1;
+	}, 30);
 }
 
-function ninesteps(counter){
-	if(counter >= 0){
-		innerSteps.innerHTML = 'Step' + ' '+ (counter + 1) + ' ' + 'of 9 on the path to digital entertainment'
+function scaleIn(element) {
+	var sc = 0.1;
+	var timer = setInterval(function () {
+		element.style.visibility = 'visible';
+		element.style.transform = 'scale(0.1,0.1)';
+		if (sc >= 1) {
+			clearInterval(timer);
+		}
+		element.style.transform = 'scale(' + sc + ')';
+		sc += sc * 0.1;
+	}, 60);
+}
+
+function ninesteps(counter) {
+	if (counter >= 0) {
+		innerSteps.innerHTML = 'Step' + ' ' + (counter + 1) + ' ' + 'of 9 on the path to digital entertainment'
 	}
 }
 ninesteps(counter);

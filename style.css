@@ -2,69 +2,78 @@
 	font-family: klavika-bold;
 	src: url(./assets/font/klavika-bold-webfont.woff);
 	font-weight: bold;
-  }
-  @font-face {
+}
+
+@font-face {
 	font-family: klavika-light;
 	src: url(./assets/font/klavika-light-webfont.woff);
 	font-weight: lighter;
-  }
-  @font-face {
+}
+
+@font-face {
 	font-family: klavika-medium;
 	src: url(./assets/font/klavika-medium-webfont.woff);
 	font-weight: medium;
-  }
-  @font-face {
+}
+
+@font-face {
 	font-family: klavika-regular;
 	src: url(./assets/font/klavika-regular-webfont.woff);
 	font-weight: normal;
-  }
-*{
-    margin: 0%;
-    box-sizing: border-box;
-    padding: 0%;
 }
-  .carousel-container {
+
+* {
+	margin: 0%;
+	box-sizing: border-box;
+	padding: 0%;
+}
+
+.carousel-container {
 	width: 100%;
 	height: 100%;
-    display: flex;
+	display: flex;
 }
+
 .carousel-slide {
 	display: flex;
 	width: 100%;
-    height: 100%;
+	height: 100%;
 }
+
 .first {
-    position: absolute;
-    height: 100vh;
+	position: absolute;
+	height: 100vh;
 }
+
 .content {
 	position: fixed;
 	z-index: 999;
-    width: 100%;
-    height: 100%;
-    top: 0%;
-    left: 0%;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
 }
+
 ul {
 	position: absolute;
 	list-style: none;
-    display: flex;
-    bottom: 2%;
-    left: 3%;
+	display: flex;
+	bottom: 2%;
+	left: 3%;
 }
 
-ul li{
+ul li {
 	margin: .3rem;
 	width: 18px;
 	height: 18px;
 	border: 2.5px solid white;
 	cursor: pointer;
-    text-align: center;
+	text-align: center;
 	font-size: 12px;
 	color: white;
 }
 
-ul li.colored{
+ul li.colored {
 	background-color: white;
 	z-index: 100;
 }
@@ -73,7 +82,7 @@ input {
 	display: none;
 }
 
-.btn{
+.btn {
 	position: absolute;
 	top: 45%;
 	padding: 1rem 1.2rem;
@@ -90,52 +99,54 @@ input {
 	stroke-width: 2px;
 }
 
-.btn:hover{
+.btn:hover {
 	opacity: 1;
 }
 
-#prev{
+#prev {
 	visibility: hidden;
 }
 
-#next{
+#next {
 	right: 2%;
 }
 
 .logo {
-    position: absolute;
-    display: flex;
+	position: absolute;
+	display: flex;
 	right: 5%;
-    bottom: 4%;
+	bottom: 4%;
 	height: 70px;
-    width: 70px;
+	width: 70px;
 
 }
+
 .logoImg {
 
 	height: 70px;
 	width: 70px;
 }
+
 .temple {
-    position: absolute;
-    bottom: 13%;
-    left: 3.5%;
+	position: absolute;
+	bottom: 13%;
+	left: 3.5%;
 	font-family: klavika-regular;
 	color: white;
 	font-size: 9.5px;
 }
 
 #innersteps {
-    position: absolute;
-    bottom: 3.5%;
+	position: absolute;
+	bottom: 3.5%;
 	left: 26%;
 	font-family: klavika-regular;
 	color: white;
-    font-size: 10px;
+	font-size: 10px;
 }
 
 .vow {
-    position: absolute;
+	position: absolute;
 	top: 2%;
 	left: 5%;
 	font-family: klavika-regular;
@@ -143,8 +154,9 @@ input {
 	text-decoration: underline;
 	font-size: large;
 }
+
 .skill {
-    position: absolute;
+	position: absolute;
 	top: 45%;
 	left: 5%;
 	font-family: klavika-regular;
@@ -154,7 +166,7 @@ input {
 }
 
 .conviction {
-    position: absolute;
+	position: absolute;
 	top: 45%;
 	left: 5%;
 	font-family: klavika-regular;
@@ -162,8 +174,9 @@ input {
 	text-decoration: underline;
 	font-size: large;
 }
+
 .work {
-    position: absolute;
+	position: absolute;
 	top: 45%;
 	right: 7%;
 	font-family: klavika-regular;
@@ -172,8 +185,9 @@ input {
 	font-size: large;
 	text-align-last: right;
 }
+
 .master {
-    position: absolute;
+	position: absolute;
 	top: 45%;
 	right: 7%;
 	font-family: klavika-regular;
@@ -182,8 +196,9 @@ input {
 	font-size: large;
 	text-align-last: right;
 }
+
 .wisdom {
-    position: absolute;
+	position: absolute;
 	top: 35%;
 	right: 7%;
 	font-family: klavika-regular;
@@ -192,48 +207,52 @@ input {
 	font-size: large;
 	text-align-last: right;
 }
+
 .perfection {
-    position: absolute;
+	position: absolute;
 	top: 45%;
 	left: 5%;
 	font-family: klavika-regular;
 	color: white;
 	text-decoration: underline;
 	font-size: large;
-}
-.pride {
-    position: absolute;
-	top: 45%;
-	left: 5%;
-	font-family: klavika-regular;
-	color: white;
-	text-decoration: underline;
-	font-size: large;
-}
-.results {
-    position: absolute;
-	top: 45%;
-	left: 5%;
-	font-family: klavika-regular;
-	color: white;
-	text-decoration: underline;
-	font-size: large;
-}
-.final {
-    width: 100%;
-    height: 100%;
-    background-color: sandybrown;
 }
 
-body{
-    background-color: black;
-    overflow: hidden;
-    display: flex;
+.pride {
+	position: absolute;
+	top: 45%;
+	left: 5%;
+	font-family: klavika-regular;
+	color: white;
+	text-decoration: underline;
+	font-size: large;
+}
+
+.results {
+	position: absolute;
+	top: 45%;
+	left: 5%;
+	font-family: klavika-regular;
+	color: white;
+	text-decoration: underline;
+	font-size: large;
+}
+
+.final {
+	width: 100%;
+	height: 100%;
+	background-color: sandybrown;
+}
+
+body {
+	background-color: black;
+	overflow: hidden;
+	display: flex;
 }
 
 .monk {
-    position: absolute;
-    width: 350px;
+	position: absolute;
+	width: 350px;
 	top: 2%;
 	left: 570%;
 	font-family: klavika-regular;
@@ -242,8 +261,9 @@ body{
 	font-size: large;
 	text-align-last: right;
 }
+
 .monastery {
-    position: absolute;
+	position: absolute;
 	top: 33%;
 	left: 579%;
 	width: 234px;
@@ -256,6 +276,7 @@ body{
 a {
 	color: white;
 }
+
 .social {
 	position: absolute;
 	top: 41%;
@@ -268,9 +289,10 @@ a {
 	display: flex;
 	align-items: center;
 	text-align: center;
-    justify-content: space-around;
+	justify-content: space-around;
 
 }
+
 .fab {
 	size: 5px;
 }
@@ -280,38 +302,42 @@ a {
 	justify-content: space-around;
 	align-items: center;
 }
+
 .facebook {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
+
 .twitter {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
-i{
+
+i {
 	padding: 15%;
 }
+
 .begining {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
 }
 
 .monkStart {
-    position: absolute;
+	position: absolute;
 	top: 30%;
 	left: 45%;
 	font-size: larger;
 }
 
 .patience {
-    position: absolute;
+	position: absolute;
 	top: 60%;
 	left: 44%;
 	width: 220px;
